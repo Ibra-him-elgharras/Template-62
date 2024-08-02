@@ -10,7 +10,7 @@
 body{
     font-family: "Poppins", sans-serif;;
 }
-/* end global rules */
+
 .parent{
     background-color: #eee;
 }
@@ -19,8 +19,6 @@ body{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
-    background-color: #aaa;
 }
 /* small   */
 
@@ -41,3 +39,18 @@ body{
         width: 1170px;
     }
 }
+/* end global rules */
+/* start header */
+.header{
+    padding: 20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 60px;
+}
+
+/* end header */
