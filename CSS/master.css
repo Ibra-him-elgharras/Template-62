@@ -1,5 +1,7 @@
 /* start variables*/
-
+:root{
+    --first-color: #ca1080;
+}
 /* end variables */
 /* start global rules */
 *{
@@ -89,6 +91,7 @@ body{
     min-width: 200px;
     top: calc(100% + 15px);
     display: none;
+    z-index: 1;
 }
 .header .links ul::before{
     content: "";
@@ -116,3 +119,30 @@ body{
     border-bottom: 1px solid #ddd;
 }
 /* end header */
+/* start landing */
+.landing{
+    background-image: url(../images/back-2.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+.landing .intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+.landing .intro-text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--first-color);
+}
+.landing .intro-text p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* end landing */
