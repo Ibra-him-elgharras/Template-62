@@ -1,6 +1,7 @@
 /* start variables*/
 :root{
     --first-color: #ca1080;
+    --second-color: #fc74c6;
 }
 /* end variables */
 /* start components */
@@ -235,12 +236,26 @@ body{
     font-weight: 300;
     line-height: 1.6;
 }
-.services .sevices-content .srv .image{
+.services .sevices-content .image{
     text-align: center;
     position: relative;
 }
-.services .sevices-content .srv .image img{
-    width: 230px;
+.services .sevices-content .image::before{
+    content: "";
+    background-color: var(--second-color);
+    width: 80px;
+    height: calc(100% + 100px);
+    top: -50px;
+    position: absolute;
+    right: 40px;
+    z-index: -1;
 }
-
+.services .sevices-content .image img{
+    width: 270px;
+}
+@media (max-width: 1199px) {
+    .image-colum{
+        display: none;
+    }
+}
 /* end services */
