@@ -409,3 +409,16 @@ body{
     }
 }
 /* end contact */
+/* start footer */
+.footer{
+    background-color: var(--second-color);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span{
+    font-weight: bold;
+    color: var(--first-color);
+}
+/* end footer */
