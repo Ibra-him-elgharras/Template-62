@@ -195,6 +195,7 @@ body{
 }
 .features .feat i{
     color: var(--first-color);
+    font-size: 75px;
 }
 .features .feat h3{
     font-weight: 800;
